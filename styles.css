@@ -1,0 +1,276 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(112.82deg, #5708a5 19.3%, #ad50ca 102.22%);
+}
+
+.parallax-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.parallax-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(7Z_2104.w028.n002.57A.p15.57.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+.navbar {
+  background: none;
+  z-index: 1;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.4s ease;
+}
+
+
+
+.navbar-brand {
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 10px;;
+  color: white;
+  background: linear-gradient(112.82deg, #a044ff 19.3%, #ad50ca 102.22%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-list {
+  margin-left: auto;
+}
+
+.navbar-list ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-list ul li {
+  margin-left: 20px;
+}
+
+.navbar-list ul li a {
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: block;
+  transition: color 0.4s ease;
+}
+
+.navbar.scroll {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 1%;
+  height: 10%;
+  border-radius: 10px;
+
+  .navbar-list ul li a {
+      font-size: 17px;
+      text-decoration: none;
+      color: rgb(91, 90, 90);
+      font-weight: bold;
+      display: block;
+      transition: color 0.4s ease;
+    }
+  
+}
+
+.navbar-list ul li a:hover {
+  color: darkgray;
+}
+
+.navbar-list ul li button {
+  background: linear-gradient(112.82deg, #a044ff 19.3%, #ad50ca 102.22%);
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 9px;
+  cursor: pointer;
+  transform: .4s ease;
+  text-transform: uppercase;
+}
+
+.navbar-list ul li button:hover {
+  transform: translateY(-5px);
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition: background-color 0.4s ease;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+    height: 60px;}
+ 
+    .navbar-brand {
+      font-size: 20px;
+      }
+      
+      .navbar-list ul {
+      display: none;
+      }
+      
+      .hamburger-menu {
+      display: flex;
+      }
+      
+      .navbar-list.show {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px 0;
+      }
+      
+      .navbar-list.show ul li {
+      margin-left: 0;
+      margin-bottom: 10px;
+      }
+      
+      .navbar-list.show ul li a {
+      color: #404040;
+      }
+      
+      /* Text color changes on scrolling */
+      .navbar.scroll .navbar-list ul li a {
+      color: black;
+      }
+      
+      /* Hamburger color changes on scrolling */
+      .navbar.scroll .bar {
+      background-color: black;
+      }
+      }  
+
+      /* Existing CSS code */
+
+.parallax-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(7Z_2104.w028.n002.57A.p15.57.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+.floating-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -50%);
+  margin: 10px;
+  text-align: left;
+  color: white;
+  padding: 20px;
+  /* margin-right: 200px; */
+}
+
+.floating-text h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.floating-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.hire-button {
+  background: linear-gradient(112.82deg, #a044ff 19.3%, #ad50ca 102.22%);
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 9px;
+  cursor: pointer;
+  transform: .4s ease;
+  text-transform: uppercase;
+}
+
+.floating-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 98%;
+  max-height: calc(100vh - 80px);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .floating-image {
+    position: absolute;
+    height: auto;
+    width: 50%;
+    max-width: 100%;
+    margin-top: 20px;
+    /* display: block; */
+}
+  
+  .floating-text {
+      top: 45%;
+      margin: none;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      padding: none;
+  
+  }
+
+  
+}

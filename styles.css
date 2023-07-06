@@ -204,6 +204,7 @@ body {
 
 .floating-text {
   position: absolute;
+  
   top: 50%;
   left: 50%;
   transform: translate(-100%, -50%);
@@ -225,6 +226,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
+  border-radius: 20px;
 }
 
 .hire-button {
